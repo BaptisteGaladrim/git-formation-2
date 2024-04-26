@@ -15,14 +15,14 @@ function function_that_reads_and_parses_numbers_from_a_text_file(filename) {
   }
 }
 
-function function_that_calculates_the_sum_of_an_array_of_numbers(numbers) {
+function function_that_computes_the_sum_of_an_array_of_numbers(numbers) {
   return numbers.reduce((acc, curr) => acc + curr, 0);
 }
 
 function function_that_calculates_the_average_of_an_array_of_numbers(numbers) {
   if (numbers.length === 0) return 0;
   return (
-    function_that_calculates_the_sum_of_an_array_of_numbers(numbers) /
+    function_that_computes_the_sum_of_an_array_of_numbers(numbers) /
     numbers.length
   );
 }
@@ -30,8 +30,7 @@ function function_that_calculates_the_average_of_an_array_of_numbers(numbers) {
 function main() {
   const numbers =
     function_that_reads_and_parses_numbers_from_a_text_file("numbers.txt");
-  const total =
-    function_that_calculates_the_sum_of_an_array_of_numbers(numbers);
+  const total = function_that_computes_the_sum_of_an_array_of_numbers(numbers);
   const average =
     function_that_calculates_the_average_of_an_array_of_numbers(numbers);
 
