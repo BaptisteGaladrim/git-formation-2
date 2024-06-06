@@ -10,7 +10,7 @@ function parseNumbers(filename) {
       .map(Number);
     return nums;
   } catch (err) {
-    console.error("Error reading file:", err);
+    console.error("Error reading filesssssss:", err);
     return [];
   }
 }
